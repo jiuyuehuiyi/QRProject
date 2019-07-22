@@ -4,7 +4,7 @@
 
 pod 'QRCodeLib', '~> 1.0.0'
 
-#import "QRCodeLib.h"
+#import <QRCodeLib/QRCodeLib.h>
 
 UIImage *image = [QRCodeGenerator qrImageForString:@"http://www.baidu.com" imageSize:300];
 
