@@ -10,10 +10,12 @@ UIImage *image = [QRCodeGenerator qrImageForString:codestr imageSize:300];
                    DESC
 
   spec.homepage     = "https://github.com/jiuyuehuiyi/QRProject"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "Copyright", :text => "Copyright (c) 2019-present dengweihao <1031484446@qq.com>" }
   spec.author       = { "踏歌长行" => "1031484446@qq.com" }
   spec.platform     = :ios, "8.0"
-  spec.source       = { :https://github.com/jiuyuehuiyi/QRProject/releases/download/1.0.0/QRCodeLib_1.0.0.zip" }
+  spec.source       = { :http => "https://github.com/jiuyuehuiyi/QRProject/releases/download/1.0.0/QRCodeLib_1.0.0.zip" }
+  spec.ios.deployment_target = '8.0'
+  spec.vendored_frameworks ='QRCodeLib.framework'
   spec.requires_arc = true
 
 end
